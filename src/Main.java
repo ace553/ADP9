@@ -2,6 +2,12 @@ import java.math.BigInteger;
 import java.util.Base64;
 import java.util.Scanner;
 
+import material.Feistel;
+import material.KeyPair;
+import material.PrivateKey;
+import material.PublicKey;
+import material.RSA;
+
 class Main
 {
 

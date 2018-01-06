@@ -1,3 +1,4 @@
+package material;
 import java.math.BigInteger;
 import java.util.Base64;
 
@@ -30,6 +31,8 @@ public class PublicKey
 	public static PublicKey fromBase64(String base64)
 	{
 		byte[] key = Base64.getDecoder().decode(base64);
+		
+		System.out.println(key.length);
 		
 		byte[] mod = new byte[16];
 		byte[] expo = new byte[8];

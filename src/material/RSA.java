@@ -1,3 +1,4 @@
+package material;
 import java.math.BigInteger;
 import java.util.Random;
 
@@ -60,6 +61,6 @@ public class RSA
 		}
 		BigInteger d = e.modInverse(phi);
 		
-		return new KeyPair(e, d, n);
+		return new KeyPair(e, d, n, p, q, n, phi);
 	}
 }

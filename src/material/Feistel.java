@@ -1,3 +1,4 @@
+package material;
 import java.util.Random;
 
 public class Feistel
