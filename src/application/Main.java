@@ -6,6 +6,7 @@ import generatekey.GenerateKeyController;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -49,6 +50,7 @@ public class Main extends Application
 		stage.setScene(scene);
 
 		stage.sizeToScene();
+		stage.getIcons().add(new Image("images/key-variant.png"));
 		stage.show();
 	}
 

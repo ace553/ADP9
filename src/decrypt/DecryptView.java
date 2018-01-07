@@ -15,6 +15,8 @@ public class DecryptView
 	TextArea _output;
 	
 	Button _decryptButton;
+
+	Label _sessionLabel;
 	
 	VBox _box;
 	
@@ -27,6 +29,8 @@ public class DecryptView
 		_box = new VBox();
 		
 		_decryptButton = new Button("Decrypt");
+
+		_sessionLabel = new Label("SessionKey = ");
 		
 		setupView();
 	}
@@ -51,6 +55,6 @@ public class DecryptView
 		HBox b = new HBox();
 		b.setSpacing(10);
 		b.getChildren().addAll(l, _decryptButton);
-		_box.getChildren().addAll(b, _input, _output);
+		_box.getChildren().addAll(b, _input, _sessionLabel, _output);
 	}
 }

@@ -46,6 +46,7 @@ public class OtherKeyView
 		_table.setPrefHeight(200);
 		_newKey.setPrefWidth(300);
 		_addButton.setDisable(true);
+		name.setPrefWidth(150);
 		
 		HBox addBox = new HBox();
 		addBox.getChildren().addAll(_newName,_newKey,_addButton);

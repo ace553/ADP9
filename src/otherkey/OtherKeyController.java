@@ -65,7 +65,7 @@ public class OtherKeyController
 				{
 					try
 					{
-						if (Base64.getDecoder().decode(newValue).length == 24)
+						if (Base64.getDecoder().decode(_view._newKey.getText()).length == 24)
 						{
 							_view._addButton.setDisable(false);
 						}

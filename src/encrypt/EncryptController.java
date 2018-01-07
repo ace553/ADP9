@@ -86,6 +86,10 @@ public class EncryptController
 				if(newValue != null)
 				{
 					_view._eLabel.setText("Encrypting String for: "+ newValue.nameProperty().get());
+					if(!_view._input.getText().isEmpty())
+					{
+						_view._encryptButton.setDisable(false);
+					}
 				}
 				else
 				{
@@ -114,6 +118,7 @@ public class EncryptController
 				System.arraycopy(encrypedString, 0, array, 16, encrypedString.length);
 				
 				String encrypted = Base64.getEncoder().encodeToString(array);
+				_view._sessionLabel.setText("SessionKey = " + new BigInteger(1,sessionKey));
 				_view._output.setText(encrypted);
 			}
 		});

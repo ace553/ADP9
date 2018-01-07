@@ -16,6 +16,7 @@ public class EncryptView
 	
 	Button _encryptButton;
 	
+	Label _sessionLabel;
 	Label _eLabel;
 	
 	VBox _box;
@@ -31,6 +32,7 @@ public class EncryptView
 		_encryptButton = new Button("Encrypt");
 
 		_eLabel = new Label("");
+		_sessionLabel = new Label("SessionKey = ");
 		setupView();
 	}
 
@@ -54,6 +56,6 @@ public class EncryptView
 		HBox b = new HBox();
 		b.setSpacing(10);
 		b.getChildren().addAll(_eLabel, _encryptButton);
-		_box.getChildren().addAll(b, _input, _output);
+		_box.getChildren().addAll(b, _input, _sessionLabel, _output);
 	}
 }
