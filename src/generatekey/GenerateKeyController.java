@@ -2,7 +2,6 @@ package generatekey;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import material.RSA;
 import model.CypherModel;
