@@ -118,6 +118,7 @@ public class EncryptController
 				System.arraycopy(encrypedString, 0, array, 16, encrypedString.length);
 				
 				String encrypted = Base64.getEncoder().encodeToString(array);
+				
 				_view._sessionLabel.setText("SessionKey = " + new BigInteger(1,sessionKey));
 				_view._output.setText(encrypted);
 			}

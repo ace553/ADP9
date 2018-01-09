@@ -44,6 +44,7 @@ public class Main extends Application
 		
 		
 		Scene scene = new Scene(b);
+		scene.getStylesheets().add("application.css");
 		stage.setTitle("Encryption Tester");
 
 		box.getChildren().addAll(_decrypt.getView(), _encrypt.getView());

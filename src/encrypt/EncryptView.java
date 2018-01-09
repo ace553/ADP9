@@ -39,16 +39,22 @@ public class EncryptView
 	private void setupView()
 	{
 
-		_input.setPrefRowCount(10);
+		_input.setPrefRowCount(20);
 		_input.setWrapText(true);
-		
-		_output.setPrefRowCount(10);
+		_input.setPromptText("Input String here.");
+		_output.setPrefRowCount(20);
 		_output.setEditable(false);
 		_output.setWrapText(true);
+		_output.setPromptText("Encryped base64 String goes here.");
 
 
-		_input.setMinWidth(50);
-		_output.setMinWidth(50);
+		_input.setMinWidth(100);
+		_output.setMinWidth(100);
+		
+
+		_input.setPrefColumnCount(100);
+		_output.setPrefColumnCount(100);
+		
 		_encryptButton.setDisable(true);
 		
 		_box.setSpacing(10);

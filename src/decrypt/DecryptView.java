@@ -39,15 +39,20 @@ public class DecryptView
 	{
 
 		Label l = new Label("Decrypt String with private Key");
-		_input.setPrefRowCount(10);
+		_input.setPrefRowCount(20);
 		_input.setWrapText(true);
+		_input.setPromptText("Input encrypted base64 String here");
 		
-		_output.setPrefRowCount(10);
+		_output.setPrefRowCount(20);
 		_output.setEditable(false);
 		_output.setWrapText(true);
-
-		_input.setMinWidth(50);
-		_output.setMinWidth(50);
+		_output.setPromptText("Decryped ouput goes here");
+		
+		_input.setMinWidth(100);
+		_output.setMinWidth(100);
+		
+		_input.setPrefColumnCount(100);
+		_output.setPrefColumnCount(100);
 		_decryptButton.setDisable(true);
 		
 		_box.setSpacing(10);
